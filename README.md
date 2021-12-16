@@ -9,7 +9,7 @@ npm install
 docker build . -t docker-node-sample
 
 # Create and run the container
-docker run -p 7777:8080 -d docker-node-sample
+docker run -p 7777:8080 --name my-node-app -d docker-node-sample
 
 # Check that the web app is working
 $ curl localhost:7777
